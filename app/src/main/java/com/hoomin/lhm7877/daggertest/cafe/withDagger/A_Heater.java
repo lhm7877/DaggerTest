@@ -9,6 +9,10 @@ public class A_Heater implements Heater {
 
     private boolean heating;
 
+    public A_Heater() {
+        System.out.println(this.toString());
+    }
+
     @Override
     public void on() {
         System.out.println("A_Heater : heating");

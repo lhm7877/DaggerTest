@@ -15,12 +15,12 @@ import com.hoomin.lhm7877.daggertest.cafe.withoutDagger.Pump;
  */
 public class CoffeeApp {
     public static void main(String[] args){
-//        makeCoffeeWithoutDI();
+        makeCoffeeWithoutDI();
 //        makeCoffeeWithDI();
-//        DaggerCoffeeComponent.create().make().brew();
-        com.hoomin.lhm7877.daggertest.cafe.withDagger.CoffeeMaker coffeeMaker = new com.hoomin.lhm7877.daggertest.cafe.withDagger.CoffeeMaker();
-        DaggerCoffeeComponent.create().inject(coffeeMaker);
-        coffeeMaker.brew();
+        DaggerCoffeeComponent.create().make().brew();
+//        com.hoomin.lhm7877.daggertest.cafe.withDagger.CoffeeMaker coffeeMaker = new com.hoomin.lhm7877.daggertest.cafe.withDagger.CoffeeMaker();
+//        DaggerCoffeeComponent.create().inject(coffeeMaker);
+//        coffeeMaker.brew();
 
     }
 
